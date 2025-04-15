@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminWindow</class>
+ <widget class="QMainWindow" name="AdminWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>680</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Панель администратора</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="userTab">
+       <attribute name="title">
+        <string>Пользователи</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="userLayout">
+        <item>
+         <widget class="QTableWidget" name="usersTable"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="addUserBtn">
+          <property name="text">
+           <string>Добавить пользователя</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="exit_btn">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(223, 0, 0);
+</string>
+          </property>
+          <property name="text">
+           <string>Выйти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="accessTab">
+       <attribute name="title">
+        <string>Права доступа</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="accessLayout">
+        <item>
+         <widget class="QTableWidget" name="accessTable"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="reportTab">
+       <attribute name="title">
+        <string>Отчёты</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="reportLayout">
+        <item>
+         <widget class="QTableWidget" name="reportTable"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
